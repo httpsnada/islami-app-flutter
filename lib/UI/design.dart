@@ -14,6 +14,7 @@ class AppImages {
   static const String img_left_corner = "assets/images/img_left_corner.png";
   static const String img_right_corner = "assets/images/img_right_corner.png";
   static const String bottom = "assets/images/bottom.png";
+  static const String hadeeth_card_bg = "assets/images/hadeeth_card_bg.png";
 }
 
 class AppIcons {
