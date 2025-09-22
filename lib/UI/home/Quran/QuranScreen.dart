@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:islami/UI/design.dart';
+import 'package:islami/UI/home/Quran/MostRecentSlider.dart';
 import 'package:islami/UI/home/Quran/Sura.dart';
 import 'package:islami/UI/home/Quran/SuraRow.dart';
 
@@ -48,6 +49,7 @@ class _QuranScreenState extends State<QuranScreen> {
               )
           ),
         ),
+        MostRecentSlider(),
         Expanded(
           child: ListView.separated(
             itemBuilder: (context, index) {
