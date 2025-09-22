@@ -4,6 +4,8 @@ import 'package:islami/UI/SuraDetails/SuraItem.dart';
 import 'package:islami/UI/common/CustomScaffold.dart';
 import 'package:islami/UI/design.dart';
 import 'package:islami/UI/home/Quran/Sura.dart';
+import 'package:islami/UI/providers/RecentProvider.dart';
+import 'package:provider/provider.dart';
 
 class SuraDetails extends StatefulWidget {
   @override
@@ -16,7 +18,7 @@ class _SuraDetailsState extends State<SuraDetails> {
   @override
   Widget build(BuildContext context) {
     var chapter = ModalRoute.of(context)!.settings.arguments as Chapter;
-
+    saveChapterToMostRecent(chapter);
     if (verses.isEmpty) {
       loadVerses(chapter.chapterIndex);
     }
@@ -57,6 +59,14 @@ class _SuraDetailsState extends State<SuraDetails> {
         ),
       ),
     );
+  }
+
+  void saveChapterToMostRecent(Chapter chapter) {
+    //MostRecentProvider.getInstace().saveChapter(chapter.chapterIndex);
+
+    RecentProvider provider = Provider.of<RecentProvider>(
+        context, listen: false);
+    provider.saveChapter(chapter);
   }
 
   loadVerses(int chapterIndex) async {
