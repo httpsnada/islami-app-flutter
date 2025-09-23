@@ -17,6 +17,11 @@ class AppImages {
   static const String hadeeth_card_bg = "assets/images/hadeeth_card_bg.png";
   static const String sebha_head = "assets/images/sebha_head.png";
   static const String sebha_body = "assets/images/sebha_body.png";
+  static const String sebha = "assets/images/sebha.png";
+  static const String sebha_bg = "assets/images/sebha_bg.png";
+ // static const String sebha_head = "assets/images/sebha_head.png";
+ // static const String sebha_body = "assets/images/sebha_body.png";
+  static const String img_most_recent = "assets/images/img_most_recent.png";
 }
 
 class AppIcons {
