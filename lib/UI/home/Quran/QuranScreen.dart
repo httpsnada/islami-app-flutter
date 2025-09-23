@@ -53,7 +53,11 @@ class _QuranScreenState extends State<QuranScreen> {
         Expanded(
           child: ListView.separated(
             itemBuilder: (context, index) {
-              return SuraRow(chapter: filteredChapters[index]);
+              return Column(
+                children: [
+                  SuraRow(chapter: filteredChapters[index]),
+                ],
+              );
             },
             separatorBuilder: (context, index) {
               return Container(

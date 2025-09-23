@@ -22,6 +22,11 @@ class AppImages {
  // static const String sebha_head = "assets/images/sebha_head.png";
  // static const String sebha_body = "assets/images/sebha_body.png";
   static const String img_most_recent = "assets/images/img_most_recent.png";
+  static const String onboarding00 = "assets/images/onboarding00.png";
+  static const String onboarding01 = "assets/images/onboarding01.png";
+  static const String onboarding02 = "assets/images/onboarding02.png";
+  static const String onboarding03 = "assets/images/onboarding03.png";
+  static const String onboarding04 = "assets/images/onboarding04.png";
 }
 
 class AppIcons {
